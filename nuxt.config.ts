@@ -21,8 +21,8 @@ export default defineNuxtConfig({
         includeAppSources: true,
         // ...
       },
-      index: [{ sitemap: `/api/website/sitemap` }],
     },
+    appendSitemaps: [{ sitemap: `/api/website/sitemap` }],
   },
   css: [
     "usebootstrap/scss/usebootstrap",
