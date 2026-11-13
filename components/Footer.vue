@@ -27,7 +27,7 @@ let year = d.getFullYear();
       <div class="container">
         <div class="row">
           <div class="mb-4 mb-sm-0 col-sm-4">
-            <div class="h5 text-white border-bottom d-inline-block pb-3">
+            <div class="h5 text-white  d-inline-block pb-3">
               Location
             </div>
             <div>
@@ -138,7 +138,7 @@ let year = d.getFullYear();
             </div>
           </div>
           <div class="mb-4 mb-sm-0 col-sm-4">
-            <div class="h5 text-white border-bottom d-inline-block pb-3">
+            <div class="h5 text-white  d-inline-block pb-3">
               Quick Links
             </div>
             <nav class="row">
@@ -185,7 +185,7 @@ let year = d.getFullYear();
             </nav>
           </div>
           <div class="mb-4 mb-sm-0 col-sm-4 col-12 d-none">
-            <div class="h5 text-white border-bottom d-inline-block pb-3">
+            <div class="h5 text-white  d-inline-block pb-3">
               Stay Updated
             </div>
             <p>Get special offers directly to your inbox.</p>
