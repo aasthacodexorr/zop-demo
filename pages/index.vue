@@ -38,13 +38,9 @@ useSeoMeta({
             Experience the excellence of {{ dealershipConfig.dealership_name }},
             the leading used car dealership in
             {{ dealershipConfig.city_1 }}. We have
-            <a class="bs-red"
-              >two branches in {{ dealershipConfig.province_1 }}</a
-            >
+             two branches in {{ dealershipConfig.province_1 }} 
             with vast range of inventory. No matter if you need a
-            <a class="bs-red"
-              >used car, truck, SUV, van, convertible, or luxury model</a
-            >, {{ dealershipConfig.dealership_name }} guarantees the ideal
+            used car, truck, SUV, van, convertible, or luxury model, {{ dealershipConfig.dealership_name }} guarantees the ideal
             choice at a price that fits your budget.
           </h3>
           <div class="paragraph-text">
@@ -71,7 +67,7 @@ useSeoMeta({
               With so many reliable vehicles to choose from,
               {{ dealershipConfig.dealership_name }} is the right choice for
               anyone in the market for a used car.
-              <a class="bs-red">Start shopping for your dream car today!</a>
+               Start shopping for your dream car today! 
             </p>
           </div>
         </div>
@@ -79,7 +75,7 @@ useSeoMeta({
         <div class="row">
           <div class="col col-12 col-md-4">
             <div class="text-center">
-              <div class="three-box-icon pt-4">
+              <div class="three-box-icon pt-4 text-red-500">
                 <img
                   src="https://zopsoftware-asset.b-cdn.net/phaeton/themes/theme-1/images/icon/dead.png"
                 />

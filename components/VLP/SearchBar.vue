@@ -4,7 +4,7 @@
     :show-loading-indicator="false"
     :class-names="{
       'ais-SearchBox-submit': 'd-none',
-      'ais-SearchBox-input': 'form-control rounded-0',
+      'ais-SearchBox-input': 'form-control rounded shadow-sm',
       'ais-SearchBox-reset': 'd-none',
     }"
   ></ais-search-box>

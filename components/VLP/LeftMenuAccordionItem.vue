@@ -11,7 +11,7 @@
       <Icon
         :name="isOpen ? 'bx:bxs-chevron-up' : 'bx:bxs-chevron-down'"
         style="position: relative; top: -5px"
-        class="fs-4 d-inline-block float-end text-primary"
+        class="fs-4 d-inline-block float-end text-dark"
       />
     </div>
     <div

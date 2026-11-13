@@ -8,8 +8,8 @@ const props = defineProps({
 });
 </script>
 <template>
-  <div class="m-1">
-    <div class="feature-slde">
+  <div class="h-100 m-2">
+    <div class="feature-slde h-100 d-flex flex-column justify-content-between">
       <div class="feature-image">
         <CommonMiniGallery
           :images="

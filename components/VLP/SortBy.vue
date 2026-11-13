@@ -6,7 +6,7 @@ const props = defineProps({
 <template>
   <ais-sort-by
     :class-names="{
-      'ais-SortBy-select': 'form-select rounded-0',
+      'ais-SortBy-select': 'form-select rounded shadow-sm',
       'ais-SortBy': 'ms-2 d-inline-block',
     }"
     :items="[

@@ -20,11 +20,11 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <Col col="md-3 lg-2 xs-12" class="d-md-block gy-3 gx-3 zd-sticky">
+  <Col col="xs-12 sm-12 md-4 lg-3" class="d-md-block zd-sticky">
     <BDiv class="text-end d-xs-block d-md-none">
       <BButton
         id="leftMenuOpenButton"
-        class="rounded-0 btn-primary advance-filters-button py-3"
+        class="rounded btn-dark advance-filters-button py-3"
         ><Icon
           name="bx:abacus"
           class="fw-bolder me-2 d-inline-block"
@@ -35,7 +35,7 @@ onMounted(async () => {
     </BDiv>
     <div class="filter-container d-md-block d-none" id="left-menu-filter-container">
       <div class="">
-        <div class="mb-5 mt-3 notranslate filterCard card">
+        <div class="mb-5 notranslate filterCard card">
           <button class="btn btn-link d-xs-block d-md-none text-end px-2">
             <Icon
               id="leftMenuCloseButton"
@@ -82,7 +82,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -102,7 +102,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -122,7 +122,7 @@ onMounted(async () => {
                     :sort-by="['name:desc']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -166,7 +166,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -185,7 +185,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -204,7 +204,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -223,7 +223,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -242,7 +242,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -261,7 +261,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
@@ -280,7 +280,7 @@ onMounted(async () => {
                     :sort-by="['name']"
                     :class-names="{
                       'ais-RefinementList-showMore':
-                        'btn btn-primary w-100 rounded-0',
+                        'btn btn-dark w-100 rounded',
                       'ais-RefinementList-showMore--disabled': 'd-none',
                       'ais-RefinementList-list': 'left-menu-items-list w-100',
                     }"
