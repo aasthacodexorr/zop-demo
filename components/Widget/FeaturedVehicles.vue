@@ -21,7 +21,7 @@ const routing = {
 
 // Carousel configuration
 const carousel_config = {
-  itemsToShow: 4,
+  itemsToShow: 3,
   snapAlign: "center",
   breakpointMode: "viewport",
   breakpoints: {
@@ -30,11 +30,11 @@ const carousel_config = {
       snapAlign: "center",
     },
     576: {
-      itemsToShow: 3,
+      itemsToShow: 2,
       snapAlign: "start",
     },
     992: {
-      itemsToShow: 4,
+      itemsToShow: 3,
       snapAlign: "start",
     },
   },
