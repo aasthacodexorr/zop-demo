@@ -131,6 +131,12 @@ a.bs-red {
   border-radius: 8px !important;
   transition: all 0.2s ease-in-out;
 }
+
+.btn:hover{
+  background-color: #000;
+  color: white;
+}
+
 button.btn,
 a.btn,
 .btn.rounded-0,
