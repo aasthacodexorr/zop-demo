@@ -239,7 +239,7 @@ ul.ais-RefinementList-list
   opacity: 1;
   height: 8px;
   border-width: 3px;
-  border-color: #0075e3;
+  border-color: #dc2626;
   border-top: none;
   border-right: none;
   -webkit-transform: rotate(-45deg);
@@ -308,15 +308,18 @@ span.ais-RangeInput-separator {
   text-transform: capitalize;
 }
 button.ais-RangeInput-submit {
-  background-color: #0075e3;
-  padding: 6px 5px;
-  border-radius: 3px;
+  background-color: #dc2626;
+  padding: 6px 12px;
+  border-radius: 4px;
   color: #fff;
   top: 0px;
   position: relative;
+  border: 0;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
 }
 button.ais-RangeInput-submit:hover {
-  background-color: #000;
+  background-color: #0b0c10;
 }
 .ais-InfiniteHits-list {
   list-style-type: none;
@@ -328,17 +331,22 @@ button.ais-RangeInput-submit:hover {
 
 button.ais-InfiniteHits-loadMore {
   font-size: 13px;
-  background-color: #000;
-  border-color: #000;
+  background-color: #0b0c10;
+  border-color: #0b0c10;
   text-decoration: none;
   color: #fff;
   padding: 13px 15px;
   margin-top: 30px;
-  border-radius: 3px;
+  border-radius: 4px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
   border: 0;
+  transition: all 0.2s ease;
+}
+button.ais-InfiniteHits-loadMore:hover {
+  background-color: #dc2626;
+  border-color: #dc2626;
 }
 </style>

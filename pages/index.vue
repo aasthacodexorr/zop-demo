@@ -38,11 +38,11 @@ useSeoMeta({
             Experience the excellence of {{ dealershipConfig.dealership_name }},
             the leading used car dealership in
             {{ dealershipConfig.city_1 }}. We have
-            <a class="bs-blue"
+            <a class="bs-red"
               >two branches in {{ dealershipConfig.province_1 }}</a
             >
             with vast range of inventory. No matter if you need a
-            <a class="bs-blue"
+            <a class="bs-red"
               >used car, truck, SUV, van, convertible, or luxury model</a
             >, {{ dealershipConfig.dealership_name }} guarantees the ideal
             choice at a price that fits your budget.
@@ -71,7 +71,7 @@ useSeoMeta({
               With so many reliable vehicles to choose from,
               {{ dealershipConfig.dealership_name }} is the right choice for
               anyone in the market for a used car.
-              <a class="bs-blue">Start shopping for your dream car today!</a>
+              <a class="bs-red">Start shopping for your dream car today!</a>
             </p>
           </div>
         </div>
