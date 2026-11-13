@@ -32,37 +32,41 @@ const props = defineProps({
           <h3 class="h5" v-html="item.title"></h3>
         </NuxtLink>
       </div>
-      <div class="feature-content d-flex align-items-center">
-        <div class="col col-6 feature-content-left">
-          <p>Engine:</p>
-          <p>{{ item.engine }}</p>
-          <p>Transmission:</p>
-          <p>{{ item.transmission }}</p>
+      <div class="feature-content">
+        <div class="card-detail-row">
+          <span class="detail-label">Engine:</span>
+          <span class="detail-value">{{ item.engine || 'N/A' }}</span>
         </div>
-        <div class="col col-6 feature-content-right text-end">
-          <p><strong>Sale price</strong></p>
-          <p
+        <div class="card-detail-row">
+          <span class="detail-label">Transmission:</span>
+          <span class="detail-value">{{ item.transmission || 'N/A' }}</span>
+        </div>
+        <div class="card-price-row border-top">
+          <div class="price-left">
+            <span class="detail-label">Sale price:</span>
+            <span
+              v-if="
+                parseInt(item.selling_price) > 0 &&
+                parseInt(item.hide_price) === 0
+              "
+              class="price-number"
+            >
+              {{
+                formatNumber(item.selling_price, {
+                  style: "currency",
+                  currency: "USD",
+                })
+              }}
+            </span>
+            <span v-else class="price-number">CALL FOR PRICE</span>
+          </div>
+          <div
             v-if="
-              parseInt(item.selling_price) > 0 &&
-              parseInt(item.hide_price) === 0
-            "
-          >
-            <strong>{{
-              formatNumber(item.selling_price, {
-                style: "currency",
-                currency: "USD",
-              })
-            }}</strong>
-          </p>
-          <p v-else><strong>CALL FOR PRICE</strong></p>
-          <p
-            :style="
               parseInt(item.emi_amount) > 0 &&
               parseInt(item.financing_on) !== 0 &&
               parseInt(item.hide_price) === 0
-                ? ''
-                : 'visibility: hidden;'
             "
+            class="price-emi"
           >
             {{
               formatNumber(item.emi_amount, {
@@ -71,7 +75,7 @@ const props = defineProps({
               })
             }}
             / mo.
-          </p>
+          </div>
         </div>
       </div>
       <div class="feature-content-detail">

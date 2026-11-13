@@ -507,20 +507,61 @@ p.three-box-title {
   line-height: 1.35;
   color: var(--black);
 }
-.feature-content p {
-  color: var(--black);
+.card-detail-row {
+  display: flex;
+  align-items: baseline;
+  padding: 3px 0;
   font-size: 0.875rem;
-  margin-bottom: 3px;
+  line-height: 1.4;
+
+  .detail-label {
+    font-weight: 700;
+    color: var(--black);
+    margin-right: 6px;
+    flex-shrink: 0;
+  }
+
+  .detail-value {
+    color: #4b5563;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
-.feature-content-left p {
-  color: #6b7280;
-  margin-bottom: 2px;
-  font-size: 0.825rem;
-}
-.feature-content-right p strong {
-  color: var(--black);
-  font-size: 1.15rem;
-  font-weight: 800;
+
+.card-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  margin-top: 4px;
+  border-top: 1px solid #f1f3f5;
+
+  .price-left {
+    display: flex;
+    align-items: baseline;
+
+    .detail-label {
+      font-weight: 700;
+      color: var(--black);
+      margin-right: 8px;
+      font-size: 0.875rem;
+    }
+
+    .price-number {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--black);
+    }
+  }
+
+  .price-emi {
+    font-size: 0.825rem;
+    color: #6b7280;
+    font-weight: 600;
+  }
 }
 .feature-content-detail {
   padding: 0px 14px;
@@ -883,6 +924,34 @@ button.ais-InfiniteHits-loadMore,
     color: #666666 !important;
     box-shadow: none !important;
     cursor: not-allowed !important;
+  }
+}
+
+/* 3 Columns Grid for Inventory */
+.inventory-cards-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-right: -12px !important;
+  margin-left: -12px !important;
+}
+.inventory-cards-grid > .inventory-col {
+  padding-right: 12px !important;
+  padding-left: 12px !important;
+  margin-bottom: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+
+  @media (min-width: 768px) {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+
+  @media (min-width: 992px) {
+    width: 33.333333% !important;
+    max-width: 33.333333% !important;
+    flex: 0 0 33.333333% !important;
   }
 }
 

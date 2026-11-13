@@ -113,18 +113,20 @@ const routing = {
               <VLPNoInventoryFound
                 v-if="items.length === 0"
               ></VLPNoInventoryFound>
-              <div
-                v-for="(item, index) in items"
-                :key="item.stock_no"
-                class="col-12 col-sm-6 col-lg-4 d-flex flex-column my-2 px-2"
-              >
-                <template v-if="index === items.length - 1">
-                  <a v-element-visibility="visibilityChanged"></a>
-                </template>
-                <VLPGridEntity :item="item"></VLPGridEntity>
-                <template v-if="index === items.length - 1">
-                  <a v-element-visibility="visibilityChanged"></a>
-                </template>
+              <div class="row g-4 inventory-cards-grid">
+                <div
+                  v-for="(item, index) in items"
+                  :key="item.stock_no"
+                  class="inventory-col col-12 col-md-6 col-lg-4"
+                >
+                  <template v-if="index === items.length - 1">
+                    <a v-element-visibility="visibilityChanged"></a>
+                  </template>
+                  <VLPGridEntity :item="item"></VLPGridEntity>
+                  <template v-if="index === items.length - 1">
+                    <a v-element-visibility="visibilityChanged"></a>
+                  </template>
+                </div>
               </div>
               <div class="col-12 text-center my-4 py-3">
                 <VLPShowMore
