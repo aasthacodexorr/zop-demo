@@ -111,9 +111,7 @@ onMounted(() => {
             >
           </li>
         </ul>
-        <ul class="nav">
-          <WidgetUniversalSearchVDP></WidgetUniversalSearchVDP>
-        </ul>
+
       </div>
     </div>
     <Navbar expand="lg" class="navbar navbar-dark bg-white">
