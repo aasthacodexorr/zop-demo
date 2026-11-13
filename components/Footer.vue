@@ -238,9 +238,24 @@ let year = d.getFullYear();
       </div>
     </div>
     <div class="container text-center">
-      <p class="pt-4">
-        &copy; {{ year }} {{ dealershipConfig.dealership_name }} - All rights
-        reserved.
+      <p class="pt-4 mb-2">
+        &copy; {{ year }} {{ dealershipConfig.dealership_name }} 
+      </p>
+      <p class="powered-by-section">
+        All rights
+        reserved. Powered by 
+        <a 
+          href="https://www.zopdealer.com/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="powered-by-link"
+        >
+          <img 
+            src="~/assets/images/zlogo.png" 
+            alt="ZopSoftware" 
+            class="powered-by-logo"
+          />
+        </a>
       </p>
     </div>
   </footer>

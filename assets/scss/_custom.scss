@@ -1443,3 +1443,42 @@ ul.ais-NumericMenu-list {
   -webkit-animation: rotating 2s linear infinite;
 }
 /** MISC : END **/
+
+/* POWERED BY SECTION START */
+.powered-by-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  font-size: 0.95rem;
+  color: white;
+  margin-top: -7px;
+}
+
+.powered-by-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.powered-by-link:hover {
+  opacity: 0.8;
+}
+
+.powered-by-logo {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.powered-by-link:hover .powered-by-logo {
+  opacity: 1;
+}
+/* POWERED BY SECTION END */
